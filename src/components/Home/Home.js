@@ -4,6 +4,7 @@ import Header from '../shared/Header'
 import Banner from './Banner'
 import OurDoctors from './OurDoctors'
 import OurServices from './OurServices'
+import Review from './Review'
 import SecBanner from './SecBanner'
 
 const Home = () => {
@@ -11,9 +12,10 @@ const Home = () => {
     <div>
       <Header />
       <Banner />
-      <OurServices />
-      <SecBanner />
+      <OurServices />     
       <OurDoctors />
+      <SecBanner />
+      <Review />
       <Footer />
     </div>
   )

@@ -1,0 +1,34 @@
+.order-from{
+    width: 500px;
+}
+.order-from-sec{
+    width: 100%;
+}
+.order-from-sec input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid black;
+}
+
+.order-from input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid black;
+}
+
+.submit-btn{
+    background-color: #32A262;
+    color: white;
+    border: none;
+}
+.bottom{
+    min-height: 100vh;
+}
+@media only screen and (max-width: 600px) {
+    .order-from{
+        width: 100%;
+    }
+    
+}

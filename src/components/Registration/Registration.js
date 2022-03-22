@@ -8,6 +8,7 @@ import googleImg from '../../images/google.png'
 import useAuth from '../Firebase/useAuth';
 import Header from '../shared/Header';
 import Footer from '../shared/Footer';
+import login_img from '../../images/login.png';
 
 const Registration = () => {
     const [loginData, setLoginData] = useState({})
@@ -62,9 +63,9 @@ const Registration = () => {
                     <Grid style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }} container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                         <Grid style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }} item xs={12} md={6} lg={6}>
                             <div style={{ width: '100%' }}>
-                                <h3 style={{ fontSize: '33px', color: '#385a64' }}>
+                                <h4 style={{ fontSize: '33px', color: '#385a64', fontWeight: 'bold', textAlign: 'center', paddingBottom: '10px' }}>
                                     Please Register!
-                                </h3>
+                                </h4>
 
                                 {!isLoading &&
                                     <form style={{ width: '100%' }} onSubmit={handleRegister}>
@@ -106,15 +107,15 @@ const Registration = () => {
                                         <Box>
                                             <Button
                                                 type="submit"
-                                                style={{ width: '100%', padding: '10px', backgroundColor: 'crimson', marginTop: '10px' }} variant="contained">Register</Button>
+                                                style={{ width: '100%', padding: '10px', backgroundColor: '#32A262', marginTop: '10px' }} variant="contained">Register</Button>
                                         </Box>
                                         <p style={{ marginTop: '10px' }} className="error-txt text-danger">
-                                            <Link style={{ color: 'crimson' }} to="/login">Already Have an account?</Link>
+                                            <Link style={{ color: '#32A262' }} to="/login">Already Have an account?</Link>
                                         </p>
                                     </form>
                                 }
                                 {
-                                    isLoading && <CircularProgress />
+                                    isLoading && <div className='d-flex justify-content-center mb-3'><CircularProgress /></div>
                                 }
                                 <button onClick={handleGoogleSignin} className="google-btn">
                                     <img className="img-fluid" src={googleImg} alt="" />
@@ -123,7 +124,7 @@ const Registration = () => {
                             </div>
                         </Grid>
                         <Grid item xs={12} md={6} lg={6}>
-                            <img className='img-fluid' src="https://i.ibb.co/kmFMt8M/background.png" alt="" />
+                            <img className='img-fluid' src={login_img} alt="" />
                         </Grid>
                     </Grid>
                 </Container>

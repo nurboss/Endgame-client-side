@@ -9,6 +9,7 @@ import Header from '../shared/Header';
 import Footer from '../shared/Footer';
 import googleImg from '../../images/google.png'
 import '../../style/login.css'
+import login_img from '../../images/login.png';
 
 const Login = () => {
     const [loginData, setLoginData] = useState({})
@@ -57,9 +58,9 @@ const Login = () => {
                     <Grid style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }} container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                         <Grid style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }} item xs={12} md={6} lg={6}>
                             <div style={{ width: '100%' }}>
-                                <h3 style={{ fontSize: '33px', color: '#385a64' }}>
+                                <h4 style={{ fontSize: '33px', color: '#385a64', fontWeight: 'bold', textAlign: 'center', paddingBottom: '10px' }}>
                                     Please Login
-                                </h3>
+                                </h4>
                                 {!isLoading
                                     && <form style={{ width: '100%' }} onSubmit={handleLogin}>
                                         <TextField
@@ -84,17 +85,17 @@ const Login = () => {
                                         <Box>
                                             <Button
                                                 type="submit"
-                                                style={{ width: '100%', padding: '10px', backgroundColor: 'crimson', marginTop: '10px' }} variant="contained">Submit</Button>
+                                                style={{ width: '100%', padding: '10px', backgroundColor: '#32A262', marginTop: '10px' }} variant="contained">Submit</Button>
                                         </Box>
                                         <p style={{ marginTop: '10px' }} className="error-txt text-danger">
-                                            <Link style={{ color: 'crimson' }} to="/registration">Are You New User?</Link>
+                                            <Link style={{ color: '#32A262' }} to="/registration">Are You New User?</Link>
                                         </p>
 
                                     </form>
                                 }
                                 {
                                     isLoading &&
-                                    <CircularProgress />
+                                    <div className='d-flex justify-content-center mb-3'><CircularProgress /></div>
                                 }
 
                                 <div className=" w-100">
@@ -106,7 +107,7 @@ const Login = () => {
                             </div>
                         </Grid>
                         <Grid item xs={12} md={6} lg={6}>
-                            <img className='img-fluid ' src="https://i.ibb.co/kmFMt8M/background.png" alt="" />
+                            <img className='img-fluid ' src={login_img} alt="" />
                         </Grid>
                     </Grid>
                     {/* snackbar of error show */}

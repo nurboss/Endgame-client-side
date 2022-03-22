@@ -58,8 +58,12 @@ const Modals = ({openModal, handleModalClose, singleDetails, handleModlClose, se
                 if (data.insertedId) {
                   setModalOpen(true);
                     handleModlClose();
+                    
                 }
+                
+                
             });
+           
 
         e.preventDefault();
     }

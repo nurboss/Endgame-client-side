@@ -6,7 +6,7 @@ import img_4 from '../../images/doc-4.png';
 
 const OurDoctors = () => {
   return (
-    <div className='container my-5'>
+    <div className='container view pt-5'>
       <p className='text-center service-header '>OUE DOCTORS</p>
         <h4 className='sec-header'>The Doctors We have</h4>
         <div className="row">

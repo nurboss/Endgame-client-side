@@ -20,4 +20,12 @@
     color: #ffff;
     font-weight: 600;
 }
+.red-btn{
+    border: none;
+    background-color:  red;
+    padding: 10px 20px;
+    color: #ffff;
+    font-weight: 600;
+}
+
 

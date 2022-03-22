@@ -33,13 +33,11 @@ const Dashbord = (props) => {
             {user.email && <Link style={{ textDecoration: "none", paddingLeft: "15px", color: "black" }} to={`dashbord/addreview`}><Button color="inherit">Add Review</Button></Link>}
             <br />
             <Divider />
-            {/*{admin && <Link style={{ textDecoration: "none", paddingLeft: "15px", color: "black" }} to={`dashboard/manageallOrders`}><Button color="inherit">All Orders</Button></Link>}
+            {admin && <Link style={{ textDecoration: "none", paddingLeft: "15px", color: "black" }} to={`dashbord/reviewcontrol`}><Button color="inherit">Review Approve</Button></Link>}
             <br />
-            {admin && <Link style={{ textDecoration: "none", paddingLeft: "15px", color: "black" }} to={`dashboard/makeadmin`}><Button color="inherit">Make Admin</Button></Link>}
+            {admin && <Link style={{ textDecoration: "none", paddingLeft: "15px", color: "black" }} to={`dashbord/allapointment`}><Button color="inherit">All Appointment</Button></Link>}           
             <br />
-            {admin && <Link style={{ textDecoration: "none", paddingLeft: "15px", color: "black" }} to={`dashboard/addproduct`}><Button color="inherit">Add Products</Button></Link>}
-            <br />
-            {admin && <Link style={{ textDecoration: "none", paddingLeft: "15px", color: "black" }} to={`dashboard/manageproduct`}><Button color="inherit">Manage All Orders</Button></Link>} */}
+            {/*{admin && <Link style={{ textDecoration: "none", paddingLeft: "15px", color: "black" }} to={`dashboard/manageproduct`}><Button color="inherit">Manage All Orders</Button></Link>} */}
         </div>
     );
 

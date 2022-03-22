@@ -22,23 +22,25 @@ const SingleService = () => {
     return (
         <>
       <Header />
-        <div className="container">
-            <div className="row">                
+        <div className="container ">
+            <div className="row view">                
                 <div className='d-flex justify-content-center align-items-center'>
-                <div className="col-lg-6 ">
-                    <img className="img-fluid" style={{ width: '250px'}} src={img} alt="" />
+                <div className="col-lg-5 d-flex justify-content-center">
+                    <img className="img-fluid" style={{ width: '300px'}} src={img} alt="" />
                 </div>
-                <div className="col-lg-6">
-                    <h1 className="fw-bold">{name}</h1>
-                    <p>{doctor}</p>
-                    <p>{docNumber}</p>
-                    <p>{visit}</p>
-                    <p>{location}</p>
-                    <p>{payment}</p>
+                 <div className="col-lg-7">
+                     
+                    <h5 className='mb-3'><span className='fw-bold'>The name of organ:</span> {name}.</h5>
+                    <h5 className='mb-3'><span className='fw-bold'>Dr. Name:</span> {doctor}.</h5>
+                    <h5 className='mb-3'><span className='fw-bold'>Number:</span> {docNumber}.</h5>
+                    <h5 className='mb-3'><span className='fw-bold'>Visit:</span> {visit}</h5>
+                    <h5 className='mb-3'><span className='fw-bold'>Chamber Location:</span> {location}.</h5>
+                    <h5 className='mb-3'><span className='fw-bold'>Payment Method:</span> {payment}.</h5>
                     
                     <button onClick={handleModalOpen} className="car-btn green-btn">Book an Appointment</button>
                     
-                </div> </div>                              
+                 </div> 
+                </div>                              
             </div>
         </div>
         <Modals handleModalClose={handleModalClose} openModal={openModal} singleDetails={singleDetails} handleModlClose={handleModalClose} 

@@ -23,7 +23,7 @@ const Header = () => {
                         <Nav className="ms-auto">
                             <Link className="me-lg-3 nav-link manu-items fonts" as={Link} to="/home">Home</Link>
                             {/* <Link className="me-lg-3 nav-link manu-items fonts" as={Link} to="/aboutus">About Us</Link> */}
-                            {/* <Nav.Link className="me-lg-3 nav-link fonts" as={Link} to="/explor">Explore Foods</Nav.Link> */}
+                            <Nav.Link className="me-lg-3 nav-link fonts" as={Link} to="/services">Services</Nav.Link>
                             
                             {
                                 user?.email ?

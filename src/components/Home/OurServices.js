@@ -13,7 +13,8 @@ const OurServices = () => {
   const [data, setData] = useState([]);
   console.log(data);
   return (
-    <div className='container mb-5'>
+    <div className="bg-custom py-5">
+      <div className='container mb-5 '>
         <p className='text-center service-header'>OUE SERVICES</p>
         <h4 className='sec-header'>Services We Provide</h4>
         <div className="row">
@@ -24,6 +25,7 @@ const OurServices = () => {
                 ></ServiceCart> )
         }
         </div>
+    </div>
     </div>
   )
 }

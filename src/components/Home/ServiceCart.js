@@ -6,7 +6,7 @@ const ServiceCart = (props) => {
     const { name , img, _id} = props.data;
   return (
       
-    <div id='sevices' className='col-lg-4 col-md-6 col-sm-12 text-center'>
+    <div className='col-lg-4 col-md-6 col-sm-12 text-center'>
         <div className='box'>
             <div className='box-img'>
                 <img className='img-fluid' src={img} alt="" />
