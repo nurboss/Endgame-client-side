@@ -8,8 +8,8 @@ const MyAppointmentCart = (props) => {
 
   return (
     <div className='appointment-box'>
-        <h4>{serviceName}</h4>
-        <h4>{date}</h4>
+        <h4>{serviceName} Checkup</h4>
+        <h4 style={{color: '#32A262'}}>{date}</h4>
         <h4>{location}</h4>
         <h4>{visit}৳</h4>
         <DeleteIcon style={{ color: 'red'}} onClick={() => props.func(_id)} />

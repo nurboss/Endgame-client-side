@@ -22,8 +22,9 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
                             <Link className="me-lg-3 nav-link manu-items fonts" as={Link} to="/home">Home</Link>
-                            {/* <Link className="me-lg-3 nav-link manu-items fonts" as={Link} to="/aboutus">About Us</Link> */}
+                            
                             <Nav.Link className="me-lg-3 nav-link fonts" as={Link} to="/services">Services</Nav.Link>
+                            
                             
                             {
                                 user?.email ?
@@ -31,17 +32,12 @@ const Header = () => {
                                         <Nav.Link className="me-lg-2 fonts nav-link" as={Link} to="/dashbord">Dashboard</Nav.Link>
                                         <button onClick={handleLogout} className="green-btn me-3 ">Sign Out</button>
                                         
+                                        
                                     </>
                                     :
                                     <Nav.Link className="me-lg-3 nav-link fonts" as={Link} to="/login">Login</Nav.Link>
                             }
-                            <Navbar.Text>
-                                <Link to="/user">
-                                    {user.photoURL ? <img className="user-img" src={user?.photoURL} alt="" /> :
-                                        <span className="user-logo fonts"><i className="fas fa-user"></i></span>
-                                    }
-                                </Link>
-                            </Navbar.Text>
+                                                                            
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

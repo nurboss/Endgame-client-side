@@ -21,7 +21,7 @@ const MyAppointment = () => {
             .then(res => res.json())
             .then(result => {
                 if (result.acknowledged) {
-                    alert('Are you Sure you want to cancel you order.')
+                    alert('Are you Sure you want to cancel you Appoinment.')
                     const remainig = myOrder.filter(service => service._id !== id);
                     setMyOrder(remainig);
                 }
@@ -46,6 +46,12 @@ const MyAppointment = () => {
             <div className="container ">
                 <h4 className="text-center fw-bold order-text my-3">Your have {myOrder?.length} doctors Appointment</h4>
                 <div className="row my-5">
+                    <div className='appointment-box'>
+                        <h4>Name</h4>
+                        <h4 style={{color: '#32A262'}}>Date</h4>
+                        <h4>Location</h4>
+                        <h4>Taka</h4>               
+                    </div>
                     {
                         myOrder.map(data => <MyAppointmentCart
                             key={data._id}
@@ -58,9 +64,9 @@ const MyAppointment = () => {
             </div>
             
             <h4 className='text-end fw-bold'> Your total visit is = {totalVisit} Taka.</h4>
-            { totalVisit > 4500 &&
-              <h4 className='text-end fw-bold'>20% discount = {parsenValue} Taka.</h4>
-            }
+            
+            <h4 className='text-end fw-bold'>(if your total is 4500) 20% discount = {parsenValue} Taka.</h4>
+            
             <h4 className='text-end fw-bold'>Total = {totalVisit - parsenValue} Taka.</h4>
 
         </div>

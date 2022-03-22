@@ -22,7 +22,7 @@ const style = {
 };
 
 const Modals = ({openModal, handleModalClose, singleDetails, handleModlClose, setModalOpen}) => {
-  const { name, visit, location } = singleDetails;
+  const { name, visit, location, doctor, docNumber } = singleDetails;
     const { user } = useAuth();
     const initialInfo = { patientName: user.displayName, email: user.email, phone: '' }
     const [bookingInfo, setBookingInfo] = useState(initialInfo);
@@ -43,6 +43,8 @@ const Modals = ({openModal, handleModalClose, singleDetails, handleModlClose, se
             visit,
             location,
             serviceName: name,
+            docName: doctor,
+            drNumber: docNumber,
             date: date.toLocaleDateString()
         }
         // send to the server
