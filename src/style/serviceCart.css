@@ -1,0 +1,23 @@
+.box{
+    width: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-img{
+    width: 100px;
+}
+.text{
+    font-size: 15px;
+    color: rgb(109, 114, 119);
+}
+.green-btn{
+    border: none;
+    background-color: #009740;
+    padding: 10px 20px;
+    color: #ffff;
+    font-weight: 600;
+}
+

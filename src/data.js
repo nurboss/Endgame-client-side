@@ -1,0 +1,101 @@
+const services = [
+    {
+        name: 'Brain',
+        id: 1,
+        img: 'https://i.ibb.co/pK1RFWw/brain.png',
+        doctor: 'Mr. Arif',
+        docNumber: '01677978676',
+        visit: 2000,
+        location: 'Sevron Hospital, floo-2, Room No:108',
+        payment: 'Prepaid'
+    },
+    {
+        name: 'Heart',
+        id: 2,
+        img: 'https://i.ibb.co/Twj8rbj/heart.png',
+        doctor: 'Mr. Hasan',
+        docNumber: '01656845645',
+        visit: 2000,
+        location: 'Sevron Hospital, floo-3, Room No:124',
+        payment: 'Prepaid'
+    },
+    {
+        name: 'Lungs',
+        id: 3,
+        img: 'https://i.ibb.co/qkfDckN/lung.png',
+        doctor: 'Mr. Shojib Islam',
+        docNumber: '01686768576',
+        visit: 1800,
+        location: 'Sevron Hospital, floo-4, Room No:148',
+        payment: 'Prepaid'
+    },
+    {
+        name: 'Stomach',
+        id: 4,
+        img: 'https://i.ibb.co/tXGGNLC/stomack.png',
+        doctor: 'Mr. Mahmud Hasan',
+        docNumber: '016096895457',
+        visit: 1700,
+        location: 'Sevron Hospital, floo-5, Room No:156',
+        payment: 'Prepaid'
+    },
+    {
+        name: 'Teeth',
+        id: 5,
+        img: 'https://i.ibb.co/dM7VgGL/tooth.png',
+        doctor: 'Mr. Nur Mohammod',
+        docNumber: '01660637993',
+        visit: 1500,
+        location: 'Sevron Hospital, floo-6, Room No:189',
+        payment: 'Prepaid'
+    },
+    {
+        name: 'Bladder',
+        id: 6,
+        img: 'https://i.ibb.co/Q9dRjFv/bludder.png',
+        doctor: 'Mr. Rafq',
+        docNumber: '01675468756',
+        visit: 2000,
+        location: 'Sevron Hospital, floo-7, Room No:203',
+        payment: 'Prepaid'
+    },
+    {
+        name: 'Eye',
+        id: 7,
+        img: 'https://i.ibb.co/LCGYQC9/eye.png',
+        doctor: 'Mr. Nayem Hasan',
+        docNumber: '01668098567',
+        visit: 1800,
+        location: 'Sevron Hospital, floo-8, Room No:248',
+        payment: 'Prepaid'
+    },
+    {
+        name: 'Bones',
+        id: 8,
+        img: 'https://i.ibb.co/WvndxNj/bone.png',
+        doctor: 'Mr. Sumon',
+        docNumber: '01663795345',
+        visit: 1200,
+        location: 'Sevron Hospital, floo-9, Room No:334',
+        payment: 'Prepaid'
+    },
+    {
+        name: 'Liver',
+        id: 9,
+        img: 'https://i.ibb.co/X8Zvrnv/liver.png',
+        doctor: 'Mr. Tarif',
+        docNumber: '01684739483',
+        visit: 1700,
+        location: 'Sevron Hospital, floo-10, Room No:399',
+        payment: 'Prepaid'
+    },
+]
+
+export default services;
+
+
+
+
+
+
+

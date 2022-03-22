@@ -1,0 +1,57 @@
+.nav-link {
+    font-size: 19px;
+    font-weight: 500;
+    color: black;
+}
+
+.fonts {
+    font-size: 15px;
+}
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 2px rgb(207, 205, 205);
+}
+
+.header-logo {
+    width: 50px;
+}
+
+.sign-out {
+    background-color: #fff;
+    border: none;
+    font-weight: bold;
+}
+
+.user-img {
+    width: 20px;
+    border-radius: 50%;
+}
+
+.user-logo {
+    background-color: #fff;
+    color: black;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+}
+.signout-btn{
+    padding: 8px 15px;
+    background-color: #009740;
+    color: #fff;
+    font-weight: 500;
+
+}
+/* .link{
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0;
+    padding-left: 18px;
+}
+.link:focus{
+    color: black;
+}
+.link:hover{
+    color: black;
+} */
