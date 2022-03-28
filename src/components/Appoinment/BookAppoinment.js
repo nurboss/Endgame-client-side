@@ -9,7 +9,7 @@ const BookAppoinment = () => {
     const {id} = useParams();
     const [singleDetails, setSingleDetails] = useState([]);
     useEffect(() => {
-        const url = `https://quiet-crag-61068.herokuapp.com/bookappoinment/${id}`;
+        const url = `http://localhost:5000/bookappoinment/${id}`;
         fetch(url)
         .then(res => res.json())
         .then(data => setSingleDetails(data))

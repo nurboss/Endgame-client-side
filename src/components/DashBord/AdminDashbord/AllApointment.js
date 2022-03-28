@@ -43,6 +43,7 @@ const AllApointment = () => {
                     <h4 style={{color: '#32A262'}}>Date</h4>
                     <h4>Service-Name</h4>
                     <h4>Patient-Name</h4>
+                    <h4>Action</h4>
                 </div>
                     {
                         myOrder.map(data => <AllApointmentCart

@@ -1,0 +1,8 @@
+.page-hight{
+    min-height: 100vh;
+    margin-top: -120px;
+}
+.page-hight h1{
+    font-size: 100px;
+    font-weight: 900;
+}

@@ -3,7 +3,7 @@ import '../../../style/appCart.css'
 import DeleteIcon from '@mui/icons-material/Delete';
 
 const AllApointmentCart = (props) => {
-    const {date, drNumber, docName,  patientName, serviceName, _id} = props.send;
+    const {date, drNumber, docName,  patientName, serviceName, _id, visit} = props.send;
     
 
   return (
@@ -13,7 +13,13 @@ const AllApointmentCart = (props) => {
         <h4 style={{color: '#32A262'}}>{date}</h4>
         <h4>{serviceName}</h4>
         <h4>{patientName}</h4>
-        <DeleteIcon style={{ color: 'red'}} onClick={() => props.func(_id)} />
+        
+        { visit.payment === 'Paid' ? <h4 style={{ color: '#32A262', fontWeight:
+       'bold'}}>{visit.payment}</h4>:
+
+       <DeleteIcon style={{ color: 'red'}} onClick={() => props.func(_id)} />
+          }
+        
     </div>
   )
 }

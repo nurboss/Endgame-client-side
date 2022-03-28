@@ -12,6 +12,8 @@ const MyAppointment = () => {
             .then(res => res.json())
             .then(data => setMyOrder(data));
     }, [email]);
+    console.log(myOrder);
+    
 
     const handleDeleteOrder = id => {
         fetch(`https://quiet-crag-61068.herokuapp.com/deleteOrde/${id}`, {
@@ -30,9 +32,16 @@ const MyAppointment = () => {
     }
   
 
+
     let totalVisit = 0;
      for(const visits of myOrder){
-        totalVisit = totalVisit + visits.visit ;
+         let newVisit;
+         if(visits.visit.payment === 'Paid'){
+            newVisit = 0;
+         } else {
+            newVisit = visits.visit;
+         }
+        totalVisit = totalVisit + newVisit ;
      }
     let parsenValue;
     if(totalVisit > 4500){
