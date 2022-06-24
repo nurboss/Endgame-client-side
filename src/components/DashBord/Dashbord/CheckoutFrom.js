@@ -16,7 +16,7 @@ const CheckoutFrom = ({paydata}) => {
 
 
   useEffect( () => {
-      fetch('http://localhost:5000/create-payment-intent' , {
+      fetch('https://quiet-crag-61068.herokuapp.com/create-payment-intent' , {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({price}),
@@ -70,7 +70,7 @@ const CheckoutFrom = ({paydata}) => {
       console.log(paymentIntent);
       // save to database
       const payment = 'Paid';
-      const url = `http://localhost:5000/appointment/${_id}`
+      const url = `https://quiet-crag-61068.herokuapp.com/appointment/${_id}`
       fetch(url, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },

@@ -12,7 +12,7 @@ import { Link, Outlet } from 'react-router-dom';
 import { Button } from '@mui/material';
 import useAuth from '../../Firebase/useAuth';
 
-const drawerWidth = 240;
+const drawerWidth = 180;
 
 const Dashbord = (props) => {
     const { admin, user } = useAuth();
@@ -23,8 +23,8 @@ const Dashbord = (props) => {
     };
 
     const drawer = (
-        <div className="dashbor-link">
-            <Toolbar />
+        <div style={{ background: '#32A262' }} className="dashbor-link">
+            {/* <Toolbar style={{ background: '#32A262' }} /> */}
             <Divider />
             <Link style={{ textDecoration: "none", paddingLeft: "15px", color: "black" }} to="/home"><Button color="inherit">Home</Button></Link>
             <br />
@@ -36,6 +36,8 @@ const Dashbord = (props) => {
             {admin && <Link style={{ textDecoration: "none", paddingLeft: "15px", color: "black" }} to={`dashbord/reviewcontrol`}><Button color="inherit">Review Approve</Button></Link>}
             <br />
             {admin && <Link style={{ textDecoration: "none", paddingLeft: "15px", color: "black" }} to={`dashbord/allapointment`}><Button color="inherit">All Appointment</Button></Link>}           
+            <br />
+            {admin && <Link style={{ textDecoration: "none", paddingLeft: "15px", color: "black" }} to={`dashbord/addnewservice`}><Button color="inherit">Add Service</Button></Link>}           
             <br />
             {/*{admin && <Link style={{ textDecoration: "none", paddingLeft: "15px", color: "black" }} to={`dashboard/manageproduct`}><Button color="inherit">Manage All Orders</Button></Link>} */}
         </div>
@@ -51,6 +53,7 @@ const Dashbord = (props) => {
                 sx={{
                     width: { sm: `calc(100% - ${drawerWidth}px)` },
                     ml: { sm: `${drawerWidth}px` },
+                    display: { lg: 'none', md: 'none', sm: 'none' }
                 }}
                 style={{ background: '#32A262' }}
             >

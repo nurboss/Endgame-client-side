@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from '../shared/Footer'
 import Header from '../shared/Header'
 import Banner from './Banner'
+import ShowDoc from './ShowDoc'
 import OurDoctors from './OurDoctors'
 import OurServices from './OurServices'
 import Review from './Review'
@@ -16,6 +17,7 @@ const Home = () => {
       <OurDoctors />
       <SecBanner />
       <Review />
+      <ShowDoc />
       <Footer />
     </div>
   )

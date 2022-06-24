@@ -3,6 +3,7 @@ import './App.css';
 import Aboutus from './components/AboutUs/Aboutus';
 import AllServices from './components/AllServices/AllServices';
 import BookAppoinment from './components/Appoinment/BookAppoinment';
+import AddnewService from './components/DashBord/AdminDashbord/AddnewService';
 import AllApointment from './components/DashBord/AdminDashbord/AllApointment';
 import ReviewControl from './components/DashBord/AdminDashbord/ReviewControl';
 import Dashbord from './components/DashBord/Dashbord/Dashbord';
@@ -41,6 +42,7 @@ function App() {
           
             <Route  path={`dashbord/reviewcontrol`} element={<ReviewControl />} />
             <Route  path={`dashbord/allapointment`} element={<AllApointment />} />
+            <Route  path={`dashbord/addnewservice`} element={<AddnewService />} />
           
           </Route>
           <Route  path='*' element={<NotFound />} />

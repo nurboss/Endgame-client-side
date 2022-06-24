@@ -48,7 +48,7 @@ const Modals = ({openModal, handleModalClose, singleDetails, handleModlClose, se
             date: date.toLocaleDateString()
         }
         // send to the server
-        fetch('http://localhost:5000/order', {
+        fetch('https://quiet-crag-61068.herokuapp.com/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

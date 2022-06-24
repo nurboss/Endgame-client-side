@@ -4,14 +4,15 @@ import '../../style/ourServices.css'
 
 
 const OurServices = () => {
+  const [data, setData] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/services')
+    fetch('https://quiet-crag-61068.herokuapp.com/services')
     .then(result => result.json())
     .then(service => setData(service))
   }, [])
 
-  const [data, setData] = useState([]);
-  console.log(data);
+ 
+ 
   return (
     <div className="bg-custom py-5">
       <div className='container mb-5 '>

@@ -4,14 +4,14 @@ import ReviewControlCart from './ReviewControlCart';
 const ReviewControl = () => {
     const [review, setReview] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/review')
+        fetch('https://quiet-crag-61068.herokuapp.com/review')
         .then(res => res.json())
         .then(data => setReview(data));
 
     }, [review]);
 
     const handleAllDelete = id => {
-      fetch(`http://localhost:5000/review/${id}`, {
+      fetch(`https://quiet-crag-61068.herokuapp.com/review/${id}`, {
           method: 'DELETE',
           headers: {'Content-Type': 'application/json'}
       })
@@ -30,7 +30,7 @@ const ReviewControl = () => {
       const handleUpdate = id => {
         const approv = "yes";
         const ojecetdata = { approv };
-    fetch(`http://localhost:5000/updatereview/${id}`, {
+    fetch(`https://quiet-crag-61068.herokuapp.com/updatereview/${id}`, {
         method: 'PUT',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(ojecetdata)

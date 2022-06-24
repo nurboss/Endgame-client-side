@@ -12,7 +12,7 @@ const Payment = () => {
     const {appointmentId} = useParams();
     const [ apdata, setApdata] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/appoint/${appointmentId}`)
+        fetch(`https://quiet-crag-61068.herokuapp.com/appoint/${appointmentId}`)
         .then(res => res.json())
         .then(data => setApdata(data));
     },[appointmentId]);

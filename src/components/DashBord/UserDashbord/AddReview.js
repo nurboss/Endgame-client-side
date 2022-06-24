@@ -11,7 +11,7 @@ const AddReview = () => {
         data.docImg = 'https://i.ibb.co/z2RXYFb/doc-1.png';
         data.userEmail = user.email;
         data.userName = user.displayName;
-        fetch('http://localhost:5000/addreview', {
+        fetch('https://quiet-crag-61068.herokuapp.com/addreview', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
